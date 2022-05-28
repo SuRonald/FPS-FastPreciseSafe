@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPS | Add New Product</title>
+    <link rel="stylesheet" href="AddProductStyle.css">
+</head>
+<body>
+    <header style="background: radial-gradient(#fff, #32a858);">
+        <a href="Home-ProductList.html"><img class="logo" src="Asset/Logo FPS.png" alt="Logo FPS"></a>
+    </header>
+    
+    <nav>
+        <a href="index.html">Product List</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="AboutProduct.html">About Product</a>
+        <a class="current" href="AddProduct.html">Add New Product</a>
+    </nav>
+
+    <div class="data">
+        <h1 style="text-align: center; margin-bottom: 10px;">~~ ADD NEW PRODUCT ~~</h1>
+
+        <form style="margin: 30px;">
+            <h3>Nama Product:</h3>
+            <input type="text" name="nama" id="nama" required/><br>
+
+            <h3>Harga Product (Dalam Rupiah):</h3>
+            <input type="number" name="harga" id="harga" required/><br>
+
+            <h3>Variasi Produt:</h3>
+            <input type="radio" name="variasi" value="Warna" id="variasi" required/> Warna
+            <input type="radio" name="variasi" value="Jenis" id="variasi" required/> Jenis
+            <input type="radio" name="variasi" value="Ukuran" id="variasi" required/> Ukuran
+            <input type="radio" name="variasi" value="Other" id="variasi" required/> Other
+            <br>
+
+            <h3>Tuliskan variasinya dipisahkan menggunakan ';'</h3>
+            <h3>Contoh: Merah;Biru; atau Rasa Madu;Rasa Melon;</h3>
+            <input type="text" name="macamvar" id="macamvar" required/>
+            <br>
+
+            <br>
+            <input type="submit" onclick="submitting()" value="Submit"/>
+        </form>
+    </div>
+
+    <footer>
+        <section style="margin: 10px; padding: 2px; text-align: center;">
+            <h2 style="color: white;">Social Media</h2>
+            <div>
+                <img class="sosmed" src="Asset/Facebook FPS.png" alt="Facebook FPS">
+                <img class="sosmed" src="Asset/Twitter FPS.png" alt="Twitter FPS">
+            </div>
+        </section>
+
+        <section style="margin: 20px; padding-bottom: 1px;">
+            <h4 style="color: white;">Copyright © Fast Precise Safe. All rights reserved.</h4>
+        </section>
+    </footer>
+
+    <script>
+        function submitting(){
+            var w = document.getElementById('nama').value;
+            var x = document.getElementById('harga').value;
+            var y = document.getElementById('variasi').value;
+            var z = document.getElementById('macamvar').value;
+            if (w == ""){
+                alert("Silahkan isi nama product anda!");
+                return false;
+            }
+            if (x == ""){
+                alert("Silahkan isi harga product anda!");
+                return false;
+            }
+            if (y == ""){
+                alert("Silahkan isi variasi product anda!");
+                return false;
+            }
+            if (z == ""){
+                alert("Silahkan isi macam variasi product anda!");
+                return false;
+            }
+            alert("SELAMAT PRODUK ANDA TERDAFTAR\n" + "Nama Product: " + w + "\n" + "Harga Product: " + x + "\n" + "Variasi: " + y + "\n" + "Macam Variasi: " + z);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color: #35363a;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+a{
+    display: inline;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: black;
+}
+
+footer{
+    background-color: #35363a;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+.current{
+    background-color: blue
+}
+
+.data{
+    margin-top: 10px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: grey;
+}
+
+.baris{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.prod{
+    border: 5px solid gray;
+    border-radius: 20px;
+    margin: 30px;
+    width: 350px;
+}
+
+.prod:hover{
+    border: 5px solid blue;
+}
+
+.sosmed{
+    width: 70px;
+}
